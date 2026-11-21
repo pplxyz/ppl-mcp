@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "ppl": {
+      "url": "https://api.ppl.xyz/mcp?ref=cursor"
+    }
+  }
+}

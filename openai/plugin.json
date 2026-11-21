@@ -1,0 +1,92 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ppl",
+  "version": "1.0.0",
+  "description": "Create and manage AI series and videos on PPL (ppl.xyz) with your own characters.",
+  "author": {
+    "name": "PPL",
+    "url": "https://ppl.xyz"
+  },
+  "homepage": "https://ppl.xyz",
+  "keywords": [
+    "ppl",
+    "video",
+    "series",
+    "characters"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "PPL",
+        "shortDescription": "Make AI series and videos",
+        "longDescription": "PPL (ppl.xyz) is an app for making AI series and videos with characters you create. Connect your PPL account to work on them in a conversation.\n\nWhat you can do: read your characters, series, world (locations, props, styles, cast) and drafts; get ideas for a next episode; write a prompt and start an episode or a standalone video as a draft; follow the render; create and manage series, their plan, posters and settings; add and edit world assets; ask another creator for a collab; and read your stats and earnings.\n\nWho it is for: creators who already use PPL and want an assistant to help them plan, write and manage their series.\n\nYour control: you approve the connection yourself, in the PPL app or in your browser on ppl.xyz, and choose what it may do. A video is made as a draft, and publishing is a separate permission. Every permission the assistant asks for starts on, publishing included; you can turn any of them off before you connect, except seeing your account. You can change the permissions or disconnect at any time in PPL, under Settings, Connected Apps.\n\nLimits: it works only with your own PPL account and your own characters and series. Making a video uses the gems already in your PPL account, within the daily limit you set for the connection. It cannot buy gems, change your plan, cash out earnings, or delete your account. Rendering a video takes a few minutes, so results arrive as a job to follow.",
+        "developerName": "PPL",
+        "capabilities": [
+          "Read your characters, series, world and drafts",
+          "Write prompts and start episodes and videos as drafts",
+          "Manage series, plans, posters and world assets",
+          "Request and answer collabs",
+          "Read stats and earnings"
+        ],
+        "websiteURL": "https://ppl.xyz",
+        "privacyPolicyURL": "https://www.ppl.xyz/privacy",
+        "termsOfServiceURL": "https://www.ppl.xyz/terms",
+        "defaultPrompt": [
+          "Show me my PPL series and what is planned next.",
+          "Give me three ideas for the next episode of my series.",
+          "Write a prompt for a new episode and tell me what it costs."
+        ]
+      },
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Read the account, a series and a character’s world (read-only)",
+              "prompt": "Show me my PPL series and what episode comes next in the first one, then show me the world of the character that leads it.",
+              "tools_triggered": "get_account, list_series, get_series, list_characters, show_world",
+              "expected_behavior": "Lists the test account’s series with their episode counts, describes the first series (synopsis, cast and the next planned episode from its plan), and shows that character’s looks, locations, props and crew, as a gallery where cards are supported. Nothing is created or changed and no gems are spent."
+            },
+            {
+              "description": "Get ideas for a next episode (read-only)",
+              "prompt": "Give me three ideas for the next episode of my first series.",
+              "tools_triggered": "list_series, get_episode_ideas",
+              "expected_behavior": "Returns PPL’s ideas for the next episode of that series. Each idea is a title, a short summary and a list of what it features (the names of crew, locations, props or looks from the creator’s world; the list is empty when the idea names none). There may be more or fewer than three. Nothing is created and no gems are spent."
+            },
+            {
+              "description": "Quote the price of a video before anything is made",
+              "prompt": "How many gems would the shortest, cheapest video of my main character cost right now? Do not make it.",
+              "tools_triggered": "get_account, get_creation_guide, get_quote",
+              "expected_behavior": "States the gem price for the shortest length (15 seconds, at 480p), and whether it fits the gem balance, today’s video limit and this connection’s daily gem limit. No render is started and no gems are spent."
+            },
+            {
+              "description": "Start one draft render after stating its price (THIS CASE SPENDS GEMS)",
+              "prompt": "Make the shortest, cheapest video of my main character waving at the camera on a beach. Tell me the price first; yes, go ahead at that price.",
+              "tools_triggered": "list_characters, get_creation_guide, get_quote, create_episode, get_job",
+              "expected_behavior": "States the gem price, then starts exactly one render at the shortest length (15 seconds, at 480p) with that price as its ceiling, and reports that it has started with a job to follow. The render lands as a draft a few minutes later; get_job then shows its preview link. The gems for that one render leave the test account. Nothing is published."
+            },
+            {
+              "description": "Read stats and earnings (read-only)",
+              "prompt": "How are my series doing, and how much have I earned so far?",
+              "tools_triggered": "get_stats, get_earnings",
+              "expected_behavior": "Reports views, likes, followers and unlocks for the account’s series, and the earnings that are available, on hold and in total. No payout details are shown and nothing is changed."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Buying gems or changing the plan is not possible through the connector: there is no tool for it. The assistant says so and points to the PPL app; at most it reads the balance.",
+              "prompt": "I am out of gems. Buy me 1,000 more and upgrade me to Pro."
+            },
+            {
+              "description": "Cashing out or moving money is not possible through the connector: there is no tool for it. The assistant may read the earnings summary, says a cash-out is done in the PPL app, and moves nothing.",
+              "prompt": "Cash out all of my earnings to my bank account now."
+            },
+            {
+              "description": "Deleting the account is not possible through the connector: there is no tool for it. The assistant says it cannot and that this is done in the PPL app.",
+              "prompt": "Delete my PPL account and everything in it."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

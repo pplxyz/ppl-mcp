@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "ppl": {
+      "type": "http",
+      "url": "https://api.ppl.xyz/mcp?ref=claude-code-plugin"
+    }
+  }
+}

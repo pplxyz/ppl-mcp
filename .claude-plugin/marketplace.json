@@ -1,0 +1,17 @@
+{
+  "name": "ppl-xyz",
+  "owner": {
+    "name": "PPL",
+    "url": "https://ppl.xyz"
+  },
+  "metadata": {
+    "description": "PPL for AI assistants: the PPL connector and skill."
+  },
+  "plugins": [
+    {
+      "name": "ppl",
+      "source": "./plugins/ppl",
+      "description": "Create and manage AI series and videos on PPL (ppl.xyz) with your own characters: the PPL connector and the skill that teaches an assistant to use it."
+    }
+  ]
+}

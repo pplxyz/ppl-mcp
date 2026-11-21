@@ -1,0 +1,17 @@
+{
+  "name": "ppl",
+  "version": "1.0.0",
+  "description": "Create and manage AI series and videos on PPL (ppl.xyz) with your own characters: the PPL connector and the skill that teaches an assistant to use it.",
+  "author": {
+    "name": "PPL",
+    "url": "https://ppl.xyz"
+  },
+  "homepage": "https://ppl.xyz",
+  "keywords": [
+    "ppl",
+    "video",
+    "series",
+    "characters",
+    "mcp"
+  ]
+}
