@@ -14,7 +14,11 @@ Generated from the PPL server. Do not edit by hand.
 
 ## Start every session
 
-1. Call `get_account`: the plan, gems, caps and what this connection may do.
+1. If the creator is new to this connection or unsure what to make, call
+   `show_home`: their characters, series, gems, videos left today and
+   ideas for the next episode, as a card where cards are supported.
+   Otherwise call `get_account`: the plan, gems, caps and what this
+   connection may do.
 2. Call `list_characters` and `list_series` to find what the creator is
    talking about. Use ids from these tools; never invent one.
 3. Before writing a prompt or picking settings, call `get_creation_guide`.

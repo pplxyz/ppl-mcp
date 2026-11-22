@@ -3,7 +3,7 @@
 Connect an AI assistant to your PPL account so it can create and manage your
 series and videos with you. This folder holds what an assistant needs:
 
-- the PPL connector's address: `https://api.ppl.xyz/mcp`
+- the PPL connector's address: `https://api.ppl.xyz/mcp?ref=github`
 - the official MCP Registry entry (`server.json`)
 - the PPL skill (`plugins/ppl/skills/ppl/`), which teaches an assistant how
   PPL works: reading a series, writing a prompt, pricing it, rendering a
@@ -28,7 +28,7 @@ Choose Add, sign in when asked, and approve the connection in the PPL app
 allows one custom connector.
 
 By hand: Customize › Connectors › "+ Add" › "Add custom connector", name
-`PPL`, address `https://api.ppl.xyz/mcp`.
+`PPL`, address `https://api.ppl.xyz/mcp?ref=github`.
 
 On a Team or Enterprise plan an owner adds it under Organization settings ›
 Connectors.
@@ -58,7 +58,7 @@ Copy `cursor/mcp.json` to `.cursor/mcp.json` in a project, or to
 ## ChatGPT
 
 In ChatGPT, add a custom MCP server with the address
-`https://api.ppl.xyz/mcp` and sign in with OAuth. Where this setting lives
+`https://api.ppl.xyz/mcp?ref=github` and sign in with OAuth. Where this setting lives
 depends on your plan and may require developer mode.
 
 ## License

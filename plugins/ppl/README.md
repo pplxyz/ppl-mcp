@@ -9,10 +9,10 @@ series, world assets, collabs and drafts with you.
 
 ## What it can do
 
-The connector has 69 tools, grouped by the switches you choose when you
+The connector has 70 tools, grouped by the switches you choose when you
 approve the connection:
 
-- **See (always on)** (22): Get account, List characters, List series, Get series, List drafts, Get job, Look up PPL help, Get creation guide, Get episode ideas, Get quote, Get world, Show world, Get world asset ideas, Find collab partners, Check collab access, List collab requests, Get collab earnings, List standalone videos, Get draft prices, Get stats, Get earnings, Get the character draft.
+- **See (always on)** (23): Get account, Show PPL home, List characters, List series, Get series, List drafts, Get job, Look up PPL help, Get creation guide, Get episode ideas, Get quote, Get world, Show world, Get world asset ideas, Find collab partners, Check collab access, List collab requests, Get collab earnings, List standalone videos, Get draft prices, Get stats, Get earnings, Get the character draft.
 - **Create** (21): Create episode or video, Create series, Save series, Discard draft, Add to world, Change a location or prop, Draw a new look, Save a drawn look, Bring in an image from a link, Ask the creator for images, Upload an image file, Draw new poster art, Retry a failed render, Edit a draft’s title and caption, Render a draft again, Edit a draft with a prompt, Extend a draft, Design a new character, Set choices on the character draft, Create the character, Discard the character draft.
 - **Manage** (20): Rename world asset, Set current style, Undo last edit of a world asset, Claim a cast member, Remove from world, Update character settings, Update series details, Update selling and release settings, Delete series, Recast a series cast member, Edit a planned episode, Remove a planned episode, Plan one more episode, Rewrite the plan, Edit a published episode, Reorder episodes, Delete episode, Add a video to a series, Take a post off the feed, Hide a collab episode from a profile.
 - **Collab** (4): Ask to collab with a character, Invite a character into a series, Answer a collab request, Cancel or end a collab.
@@ -36,7 +36,7 @@ approve the connection:
 - **Claude Code:** add the marketplace that holds this folder, install the
   `ppl` plugin, then connect when asked.
 - **Anything else that speaks MCP:** the connector address is
-  https://api.ppl.xyz/mcp.
+  https://api.ppl.xyz/mcp?ref=github.
 
 This file, the skill and its tool list are generated from the PPL server's
 own tool definitions. Do not edit them by hand.
