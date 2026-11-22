@@ -33,8 +33,10 @@ approve the connection:
 - **Claude (web, desktop and mobile):** open
   [Add PPL to Claude](https://claude.ai/customize/connectors?modal=add-custom-connector&connectorName=PPL&connectorUrl=https%3A%2F%2Fapi.ppl.xyz%2Fmcp%3Fref%3Dgithub), choose **Add**, then
   connect when asked.
-- **Claude Code:** add the marketplace that holds this folder, install the
-  `ppl` plugin, then connect when asked.
+- **Claude Code:** `/plugin install ppl --marketplace pplxyz/ppl-mcp`
+  (Claude Code 2.1.275 or later; before that, `/plugin marketplace add
+  pplxyz/ppl-mcp` then `/plugin install ppl@ppl-xyz`), then connect
+  when asked.
 - **Anything else that speaks MCP:** the connector address is
   https://api.ppl.xyz/mcp?ref=github.
 

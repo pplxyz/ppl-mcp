@@ -1,12 +1,20 @@
 {
   "name": "ppl",
+  "displayName": "PPL",
   "version": "1.0.0",
   "description": "Create and manage AI series and videos on PPL (ppl.xyz) with your own characters: the PPL connector and the skill that teaches an assistant to use it.",
   "author": {
     "name": "PPL",
-    "url": "https://ppl.xyz"
+    "url": "https://www.ppl.xyz"
   },
-  "homepage": "https://ppl.xyz",
+  "homepage": "https://www.ppl.xyz/connect",
+  "repository": "https://github.com/pplxyz/ppl-mcp",
+  "license": "MIT",
+  "icon": "./icon.png",
+  "documentationUrl": "https://github.com/pplxyz/ppl-mcp#readme",
+  "supportUrl": "https://www.ppl.xyz/support",
+  "privacyPolicyUrl": "https://www.ppl.xyz/privacy",
+  "termsOfServiceUrl": "https://www.ppl.xyz/terms",
   "keywords": [
     "ppl",
     "video",
