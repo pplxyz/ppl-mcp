@@ -55,6 +55,18 @@ its own.
 Copy `cursor/mcp.json` to `.cursor/mcp.json` in a project, or to
 `~/.cursor/mcp.json` to use it everywhere, then sign in when Cursor asks.
 
+## OpenClaw
+
+Install the PPL skill from ClawHub, or copy `openclaw/ppl` into your
+OpenClaw skills folder. Then connect the server once:
+
+```sh
+openclaw mcp set ppl '{"url":"https://api.ppl.xyz/mcp?ref=clawhub","transport":"streamable-http","auth":"oauth"}'
+openclaw mcp login ppl
+```
+
+Open the link `login` prints and approve PPL in your browser.
+
 ## ChatGPT
 
 In ChatGPT, add a custom MCP server with the address

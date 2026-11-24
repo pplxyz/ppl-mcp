@@ -1,6 +1,6 @@
 ---
 name: ppl
-description: Create and manage AI series and videos on PPL (ppl.xyz) for a creator through the PPL connector: read their characters, series and world, write a prompt for a video model, quote the gem price, render an episode as a draft, follow the job, manage series, world assets, collabs and drafts, and read stats and earnings. Use when the user mentions PPL, their PPL characters or series, making or editing an episode, a collab, gems, or their PPL drafts.
+description: "Create and manage AI series and videos on PPL (ppl.xyz) for a creator through the PPL connector: read their characters, series and world, write a prompt for a video model, quote the gem price, render an episode as a draft, follow the job, manage series, world assets, collabs and drafts, and read stats and earnings. Use when the user mentions PPL, their PPL characters or series, making or editing an episode, a collab, gems, or their PPL drafts."
 ---
 
 # PPL

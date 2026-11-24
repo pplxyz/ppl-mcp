@@ -28,7 +28,11 @@
           "Request and answer collabs",
           "Read stats and earnings"
         ],
+        "category": "Entertainment",
+        "logo": "./assets/logo.png",
+        "composerIcon": "./assets/logo.png",
         "websiteURL": "https://ppl.xyz",
+        "supportURL": "https://www.ppl.xyz/support",
         "privacyPolicyURL": "https://www.ppl.xyz/privacy",
         "termsOfServiceURL": "https://www.ppl.xyz/terms",
         "defaultPrompt": [
@@ -38,6 +42,7 @@
         ]
       },
       "review": {
+        "demo_recording_url": "https://youtu.be/hAJjrHmuZ3k",
         "test_cases": {
           "positive": [
             {
@@ -86,6 +91,9 @@
             }
           ]
         }
+      },
+      "publication": {
+        "release_notes": "First release: plan series, write and render episodes, manage your characters and world, and publish to PPL from ChatGPT."
       }
     }
   }
