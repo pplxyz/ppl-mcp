@@ -1,0 +1,18 @@
+{
+  "identifier": "ppl",
+  "name": "PPL",
+  "version": "1.0.0",
+  "description": "Make AI series and videos with your own characters on PPL (ppl.xyz): design characters, plan seasons, render episodes as priced drafts and publish them.",
+  "icon": "https://www.ppl.xyz/apple-icon.png",
+  "tags": [
+    "video",
+    "animation",
+    "characters",
+    "series",
+    "creator"
+  ],
+  "author": "The PPL Company",
+  "authorUrl": "https://www.ppl.xyz",
+  "homepage": "https://www.ppl.xyz/mcp",
+  "cloudEndpoint": "https://api.ppl.xyz/mcp?ref=lobehub"
+}

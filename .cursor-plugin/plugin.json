@@ -1,0 +1,24 @@
+{
+  "name": "ppl",
+  "displayName": "PPL",
+  "version": "1.0.0",
+  "description": "Make AI series and videos with your own characters on PPL (ppl.xyz): plan seasons, render episodes as priced drafts and publish them.",
+  "author": {
+    "name": "The PPL Company",
+    "url": "https://www.ppl.xyz"
+  },
+  "homepage": "https://www.ppl.xyz/mcp",
+  "repository": "https://github.com/pplxyz/ppl-mcp",
+  "license": "MIT",
+  "keywords": [
+    "ppl",
+    "video",
+    "animation",
+    "series",
+    "characters",
+    "mcp"
+  ],
+  "logo": "./assets/logo.png",
+  "skills": "./plugins/ppl/skills/",
+  "mcpServers": "./cursor/plugin.mcp.json"
+}

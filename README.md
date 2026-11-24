@@ -54,7 +54,9 @@ its own.
 
 ## Cursor
 
-Copy `cursor/mcp.json` to `.cursor/mcp.json` in a project, or to
+Install PPL from the Cursor Marketplace (this repository is the plugin:
+`.cursor-plugin/plugin.json` adds the PPL skill and the connector), or copy
+`cursor/mcp.json` to `.cursor/mcp.json` in a project, or to
 `~/.cursor/mcp.json` to use it everywhere, then sign in when Cursor asks.
 
 ## Gemini CLI
