@@ -3,8 +3,12 @@
   "name": "xyz.ppl/ppl",
   "title": "PPL",
   "description": "Make AI series and videos with your own characters on PPL (ppl.xyz).",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://ppl.xyz/connect",
+  "repository": {
+    "url": "https://github.com/pplxyz/ppl-mcp",
+    "source": "github"
+  },
   "remotes": [
     {
       "type": "streamable-http",

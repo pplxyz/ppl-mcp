@@ -1,5 +1,7 @@
 # PPL for AI assistants
 
+[![PPL MCP connector](https://glama.ai/mcp/connectors/xyz.ppl.api/ppl/badges/score.svg)](https://glama.ai/mcp/connectors/xyz.ppl.api/ppl)
+
 Connect an AI assistant to your PPL account so it can create and manage your
 series and videos with you. This folder holds what an assistant needs:
 
@@ -54,6 +56,14 @@ its own.
 
 Copy `cursor/mcp.json` to `.cursor/mcp.json` in a project, or to
 `~/.cursor/mcp.json` to use it everywhere, then sign in when Cursor asks.
+
+## Gemini CLI
+
+```sh
+gemini extensions install https://github.com/pplxyz/ppl-mcp
+```
+
+Then sign in to PPL with `/mcp auth ppl` in a Gemini session.
 
 ## OpenClaw
 

@@ -1,0 +1,12 @@
+{
+  "name": "ppl",
+  "version": "1.0.0",
+  "description": "Make AI series and videos with your own characters on PPL (ppl.xyz).",
+  "mcpServers": {
+    "ppl": {
+      "url": "https://api.ppl.xyz/mcp?ref=gemini-cli",
+      "type": "http"
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}
